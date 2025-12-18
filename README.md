@@ -40,6 +40,8 @@ You can configure the test using the following environment variables:
 |----------|-------------|---------|
 | `URL` | The base URL of the Aspen Discovery instance. | `http://aspen-discovery.localhost` |
 | `RESULTS_TO_CLICK` | The number of search results to interact with per search. | `5` |
+| `VUS` | The number of Virtual Users to simulate. | `1` |
+| `ITERATIONS` | The number of iterations to run per VU. | `1` |
 
 **Example:**
 ```bash
@@ -69,6 +71,8 @@ k6 run koha.js
 | `OPAC_URL` | The URL of the Koha OPAC. | `http://kohadev.localhost` |
 | `STAFF_USER` | The username for the staff interface login. | `koha` |
 | `STAFF_PASS` | The password for the staff interface login. | `koha` |
+| `VUS` | The number of Virtual Users to simulate. | `1` |
+| `ITERATIONS` | The number of iterations to run per VU. | `1` |
 
 **Example:**
 ```bash
