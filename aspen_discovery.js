@@ -95,3 +95,12 @@ export default async function (data) {
 
   page.close();
 }
+
+/**
+ * Randomly selects an element from an array
+ * @param {Array} arr - The array to pick an element from
+ * @returns {*} A random element from the input array
+ */
+function rando(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
